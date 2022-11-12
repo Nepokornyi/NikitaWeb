@@ -19,10 +19,13 @@ section{
     justify-content: center;
     align-items: center;
 
-    background-color: #111111;
+    background-color: var(--mainColor);
+
 }
 
+/* ----- */
 /* Main Page */
+/* ----- */
 
 .intro-page{
     display: flex;
