@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
 
 
     <!-- Styles -->
@@ -29,11 +29,11 @@
             <header><h2>Nikita Rubin <span>|</span> Content Creator</h2></header>
             <nav>
                 <ul class="menu-list no-style-list">
-                    <li><a href="#contact">Home</a></li>
-                    <li><a href="#contact">About</a></li>
-                    <li><a href="#contact">Partners</a></li>
-                    <li><a href="#contact">Services</a></li>
-                    <li><a href="#contact">Portfolio</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -45,7 +45,7 @@
     </section>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <h1>Nikita Rubin <br>
             Content Creator</h1>
 
@@ -67,12 +67,12 @@
             </article>
         </section>
 
-        <section class="carousel">
+        <section class="carousel partners" id="partners">
             <div>
                 <h1>Partners</h1>
             </div>
             <span class="strip"></span>
-            <div class="carousel-container partners">
+            <div class="carousel-container">
                 <div>
                     <figure><a href=""><img src="./src/assets/img/latch.webp" alt=""></a></figure>
                 </div>
@@ -88,7 +88,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <h1>Services</h1>
             <div class="service-container">
                 <div class="service-description">
@@ -108,7 +108,7 @@
             </div>
         </section>
 
-        <section class="carousel portfolio">
+        <section class="carousel portfolio" id="portfolio">
             <div class="test">
                 <h1>Portfolio</h1>
             </div>
@@ -126,7 +126,7 @@
             </div>
         </section>
 
-        <section class="form">
+        <section class="form" id="form">
             <h1>Want me to be your Content Creator?</h1>
             <form>
                 <input type="email" name="email" id="email" placeholder=" E-mail">
