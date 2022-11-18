@@ -26,21 +26,21 @@
 <body>
     <section class="intro-page">
         <div class="header-container">
-            <header><h2>Nikita Rubin | Content Creator</h2></header>
+            <header><h2>Nikita Rubin <span>|</span> Content Creator</h2></header>
             <nav>
-                <ul class="menu-list">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Partners</li>
-                    <li>Services</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
+                <ul class="menu-list no-style-list">
+                    <li><a href="#contact">Home</a></li>
+                    <li><a href="#contact">About</a></li>
+                    <li><a href="#contact">Partners</a></li>
+                    <li><a href="#contact">Services</a></li>
+                    <li><a href="#contact">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="container-intro">
             <h1><center>Meet your <br>Content Creator</center></h1>
-            <img src="https://picsum.photos/1400/400" alt="">
+            <img src="./src/assets/img/bgimg.webp" alt="">
         </div>
     </section>
 
@@ -50,12 +50,12 @@
             Content Creator</h1>
 
             <article>
-                <ul>
+                <ul class="no-style-list">
                     <li>Who is Nikita you asked?</li>
-                    <li>I'm not your ordinary Videographer or Photographer that picked up a camera as a kid, because i didn’t really know how to use a camera until the age of 20. </li>
+                    <li>I'm not your ordinary Videographer or Photographer that picked up a camera as a kid, because i didn't really know how to use a camera until the age of 20. </li>
                     <li>The camera quickly became an obsession, and the willingness to learn how to achieve the best results has constantly pushed me further. </li>
                     <li>
-                        <ul>
+                        <ul class="no-style-list">
                             <li>More then 5 years of experience in Content Creation</li>
                             <li>Photo Content and Video Content</li>
                             <li>Visual Effects</li>
@@ -89,28 +89,60 @@
         </section>
 
         <section class="services">
-            <h1>services</h1>
-            <div>
-                <div>list</div>
-                <div></div>
+            <h1>Services</h1>
+            <div class="service-container">
+                <div class="service-description">
+                    <h2>Service Name</h2>
+                    <ul class="dashed">
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+                    <button>Read More</button>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://picsum.photos/475/250" alt="">
+                </div>
             </div>
         </section>
 
-        <section class="portfolio">
-            <h1>portfolio</h1>
-            <div></div>
+        <section class="carousel portfolio">
+            <div class="test">
+                <h1>Portfolio</h1>
+            </div>
+            <span class="strip"></span>
+            <div class="carousel-container">
+                <div>
+                    <figure><a href=""><img src="./src/assets/img/latch.webp" alt=""></a></figure>
+                </div>
+                <div>
+                    <figure><a href=""><img src="./src/assets/img/horizon.webp" alt=""></a></figure>
+                </div>
+                <div>
+                    <figure><a href=""><img src="./src/assets/img/pjk.webp" alt=""></a></figure>
+                </div>
+            </div>
         </section>
 
         <section class="form">
-            <h1>want me to be?</h1>
-            <form action="">
-
+            <h1>Want me to be your Content Creator?</h1>
+            <form>
+                <input type="email" name="email" id="email" placeholder=" E-mail">
+                <input type="submit" id="submit" value="Sign up">
             </form>
         </section>
 
     </main>
-    <footer>
-        <section>Forth</section>
+    <footer id="contact">
+        <center>
+            <ul class="no-style-list">
+                <li>nikitarubin.eu</li>
+                <li>info@mysite.com</li>
+                <li>©2022 by nikitarubin.eu. Proudly created with Wix.com</li>
+            </ul>
+        </center>
     </footer>
 
     <script src="./src/script/index.js"></script>
