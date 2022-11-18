@@ -12,6 +12,7 @@
     border: 0;
     font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
+    transition-duration:150ms;
 }
 
 section{
