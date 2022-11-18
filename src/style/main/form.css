@@ -1,0 +1,28 @@
+/* ----- */
+    /* Form */
+/* ----- */
+
+.form{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    margin-top: 20px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+    #email{
+        width: 50%;
+        height: 35px;
+    }
+    #submit{
+        width: 12%;
+        height: 35px;
+        background-color: var(--button);
+        color: white;
+    }
+

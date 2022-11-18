@@ -1,0 +1,57 @@
+/* ----- */
+    /* Services */
+/* ----- */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 70vh;
+}
+    .services h1{
+        margin: 30px;
+    }
+    .service-container{
+        width: 55vw;
+        height: 40vh;
+        background-color: var(--secondaryColor);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .service-description{
+            width: 25vw;
+            height: 40vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            padding-left: 25px;
+        }
+        .service-description ul{
+            list-style-position: inside;
+            margin:0;
+        }
+
+        .service-description button{
+            width: 125px;
+            height: 35px;
+            background-color:var(--button);
+            color: white;
+        }
+
+        .img-wrapper{
+            width: 45vw;
+            height: 35vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .service-container img{
+            object-fit:scale-down;
+        }

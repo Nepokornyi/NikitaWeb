@@ -1,0 +1,22 @@
+/* ----- */
+    /* About */
+/* ----- */
+.about{
+    max-height: 75vh;
+}
+.about > h1 {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+.about > article {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+}
+    .about ul{
+        max-width: 35vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
