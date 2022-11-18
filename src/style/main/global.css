@@ -81,6 +81,9 @@ ul.dashed > li::before{
         width: 100px;
         height: 100px;
     }
+    figure:hover{
+        transform:scale(1.1);
+    }
 
 /* ----- */
     /* Portfolio */
