@@ -1,6 +1,8 @@
 :root{
     --font: #ffffff;
     --mainColor:#1A1A19;
+    --secondaryColor: #424242;
+    --button: #4D4D4D;
     color:var(--font);
 }
 
@@ -9,6 +11,7 @@
     margin: 0;
     border: 0;
     font-family: 'Prompt', sans-serif;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -21,48 +24,40 @@ section{
 
     background-color: var(--mainColor);
 }
-ul{
+
+h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+.strip{
+    background-color: var(--mainColor);
+    height: 85px;
+    width: 6px;
+
+    margin: 30px;
+}
+
+
+.no-style-list{
     list-style-type: none;
 }
-
-/* ----- */
-/* Main Page */
-/* ----- */
-
-.intro-page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:flex-end;
-    position: relative;
+ul.dashed {
+    list-style-type: none;
+  }
+ul.dashed > li{
+    text-indent: 5px;
 }
-
-    /* header & menu */
-.header-container{
-    position: absolute;
-    top:0px;
-    left:50%;
-    transform: translate(-50%);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 90vw;
-    height: 20vh;
-    min-height: 100px;
-    max-height: 250px;
+ul.dashed > li::before{
+    content:"- ";
+    text-indent: 5px;
 }
-
-.menu-list{
-    display: flex;
-    flex-direction: row;
-}
-    .menu-list > li {
-        margin-left: 10px;
-        padding-left: 10px;
-    }
 
 
 /* ----- */
@@ -88,24 +83,17 @@ ul{
     }
 
 /* ----- */
-    /* About */
+    /* Portfolio */
 /* ----- */
-.about{
-    max-height: 75vh;
+
+.test {
+    order:3;
 }
-.about > h1 {
-    width: 50vw;
-    display: flex;
-    justify-content: center;
+.portfolio span{
+    order:2;
 }
-.about > article {
-    width: 50vw;
-    height: 50vh;
-    display: flex;
+.carousel-container{
+    order:1;
+    margin-right: 35px;
 }
-    .about ul{
-        max-width: 35vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+
