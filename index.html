@@ -91,19 +91,76 @@
         <section class="services" id="services">
             <h1>Services</h1>
             <div class="service-container">
+                <div class="service-wrapper">
                 <div class="service-description">
-                    <h2>Service Name</h2>
-                    <ul class="dashed">
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
+                        <h2>Content Creation</h2>
+                        <ul>
+                            <li>Photo and Video Content</li>
+                            <ul class="sublist">
+                                <li>Concepts, Ideas and Script​</li>
+                                <li>Indoor or Outdoor Production</li>
+                                <li>No postpone deadlines</li>
+                            </ul>
+                            <li>Post-Production capabilities</li>
+                            <ul class="sublist">
+                                <li>Photo and Video Editing</li>
+                                <li>Motion Design, 2D-animation</li>
+                            </ul>
+                            <li>Visual Effects from the scratch</li>
+                        </ul>
+                        <button onclick="location.href='#contact'">Offer</button>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://picsum.photos/475/251" alt="">
+                        <div class="dots">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="service-wrapper">
+                    <div class="service-description">
+                        <h2>Atelier</h2>
+                        <ul>
+                            <li>Atelier for rent</li>
+                            <ul class="sublist">
+                                <li>Lights, Grip, Backgrounds</li>
+                            </ul>
+                            <li>E-Commerce and Food Content</li>
+                            <li>Fashion and Clothes Brand</li>
+                            <li>Talking Head and Interviews</li>
+                            <li>Green Screen Capabilities</li>
+                            <li>Art Works</li>
                     </ul>
-                    <button>Read More</button>
+                        <button onclick="location.href='#contact'">Offer</button>
                 </div>
                 <div class="img-wrapper">
-                    <img src="https://picsum.photos/475/250" alt="">
+
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="https://picsum.photos/475/251" alt="">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <img src="https://picsum.photos/475/252" alt="">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="https://picsum.photos/475/253" alt="">
+                            </div>
+            
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                        </div>
+
+                        <div class="dots">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
