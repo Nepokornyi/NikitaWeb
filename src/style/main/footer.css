@@ -3,6 +3,7 @@
 /* ----- */
 
 footer{
+    height: 5vh;
     background-color: var(--mainColor);
     color: var(--font);
     display: flex;

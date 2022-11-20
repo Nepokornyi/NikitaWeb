@@ -34,14 +34,12 @@
     .menu-list > li {
         margin-left: 15px;
         padding-left: 10px;
-        transition-duration: 150ms;
     }
     .menu-list > li:not(:first-child){
         border-left: 1px solid white;
     }
         .menu-list > li:hover{
-            font-size: 18px;
-            transition-duration: 150ms;
+            font-size: 17px;
         }
 
 /* ----- */
