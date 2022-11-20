@@ -3,7 +3,8 @@
 /* ----- */
 
 footer{
-    color:black;
+    background-color: var(--mainColor);
+    color: var(--font);
     display: flex;
     justify-content: center;
 }
