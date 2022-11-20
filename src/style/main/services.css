@@ -19,13 +19,15 @@
 
     .service-wrapper{
         width: 45vw;
+        max-width: 650px;
         height: 45vh;
+        max-height: 375px;
         background-color: var(--secondaryColor);
 
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 12px;  
+        font-size: 14px;  
     }
         .service-description{
             width: 25vw;
