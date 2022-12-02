@@ -41,13 +41,15 @@ a{
 }
 
 
-.strip{
+.strip-right, .strip-left{
     background-color: var(--font);
     height: 85px;
     width: 6px;
 
     margin: 30px;
 }
+.strip-left { margin-left: 65px;}
+.strip-right { margin-right: 65px;}
 
 
 .no-style-list{
