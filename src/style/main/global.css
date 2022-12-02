@@ -99,6 +99,8 @@ ul.dashed > li::before{
     background-image: url('../../assets/img/3-small.jpg');
     background-size:cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .test {
@@ -121,4 +123,6 @@ ul.dashed > li::before{
     background-image: url('../../assets/img/2-small.jpg');
     background-size:cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
