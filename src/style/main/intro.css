@@ -26,6 +26,9 @@
     header{
         cursor:default;
     }
+    header > h2{
+        font-weight: 500;
+    }
 
 .menu-list{
     display: flex;
@@ -34,14 +37,12 @@
     .menu-list > li {
         margin-left: 15px;
         padding-left: 10px;
-        transition-duration: 150ms;
     }
     .menu-list > li:not(:first-child){
         border-left: 1px solid white;
     }
         .menu-list > li:hover{
-            font-size: 18px;
-            transition-duration: 150ms;
+            font-size: 17px;
         }
 
 /* ----- */
@@ -62,6 +63,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%);
+        text-shadow: 1px 1px 7px var(--mainColor);
     }
     img{
         width: 100%;

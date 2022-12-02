@@ -2,7 +2,7 @@
     /* About */
 /* ----- */
 .about{
-    min-height: 550px;
+    min-height: 425px;
 }
 .about > h1 {
     width: 55vw;
@@ -23,4 +23,5 @@
     .inner-list{
         list-style:disc;
         list-style-position: inside;
+        margin-left: 15px;
     }
