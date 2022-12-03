@@ -1,152 +1,141 @@
-/* ----- */
-    /* Services */
-/* ----- */
 
 .services{
     display: flex;
+    position: relative;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 80vh;
-    position: relative;
+    justify-content:flex-end;
+    min-height: 800px;
+    margin-bottom: 150px;
 }
-    .services h1{
-        margin: 30px;
-    }
-    .service-container{
-        display: flex;
-        gap: 50px;
-    }
 
-    .service-wrapper{
-        width: 45vw;
-        max-width: 650px;
-        height: 45vh;
-        max-height: 375px;
-        background-color: var(--secondaryColor);
+.service-header{
+position: absolute;
+top:50px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;  
-    }
-        .service-description{
-            width: 25vw;
-            height: 50vh;
+z-index: 1;
+}
 
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+#services {
+  width: 90%;
+  min-height: 600px;
+  background: var(--mainColor);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: repeat 1fr;
+  grid-gap: 15px;
 
-            padding-left: 25px;
-
-        }
-        .service-description ul{
-            list-style-position: inside;
-            margin:0;
-        }
-
-        .service-description button{
-            width: 125px;
-            height: 35px;
-            background-color:var(--button);
-            color: white;
-        }
-
-        .img-wrapper{
-            width: 30vw;
-            height: 30vh;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .service-wrapper img{
-            width: 300px;
-            object-fit:scale-down;
-        }
-
-        .sublist{
-            margin-left: 15px !important;
-        }
-
-
-    /* CAROUSEL */
-    * {box-sizing: border-box}
-    .mySlides {display: none}
-    img {vertical-align: middle;}
-
-    /* Slideshow container */
-    .slideshow-container {
-    position: relative;
-    }
-
-    /* Next & previous buttons */
-    .prev, .next {
-    cursor: pointer;
+}
+.project {
+  position: relative;
+  background: var(--mainColor);
+  overflow: hidden;
+  transition-timing-function: ease-in-out;
+  transition-duration: 350ms;
+}
+.project > img {
     position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
+    opacity: 0.35;
+  }
+.project > p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 3;
+  }
+  .grid__title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    bottom: 0;
+    font-weight: 100;
+    font-size: 0.8em;
+    z-index: 3;
+    text-transform: uppercase;
     color: white;
-    font-weight: bold;
-    font-size: 24px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-    right: -50px;
-    border-radius: 3px 0 0 3px;
-    }
-    .prev{
-        left:-50px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    }
+    letter-spacing: 2px;
+  }
 
 
+.project:hover .grid__overlay {
+  transform: translateY(-0%);
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
+}
 
-    /* The dots/bullets/indicators */
-    .dots{
-        margin-top: 0px;
-        text-align:center
-    }
-    .dot {
-    cursor: pointer;
-    height: 5px;
-    width: 5px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+.grid__overlay {
+  background: var(--mainColor);
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(-101%);
+  transition: ease;
+  transition-duration: 350ms;
+}
+.grid__overlay > button {
+    background: none;
+    outline: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+    .grid__overlay > button:hover {
+      transition: ease;
+      background: white;
+      color: var(--mainColor);
+      transform: scale(1.05);
     }
 
-    .active, .dot:hover {
-    background-color: #717171;
-    }
+.overlay {
+  position: fixed;
+  background: black;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 3;
+}
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
 
-    /* Fading animation */
-    .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-    }
+.overlay__inner {
+  background: white;
+  width: 700px;
+  padding: 20px;
+  position: relative;
+  opacity: 1;
+}
 
-    @keyframes fade {
-    from {opacity: .7} 
-    to {opacity: 1}
-    }
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  background: none;
+  outline: 0;
+  color: black;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.close:hover{
+    color: var(--mainColor);
+}
 
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-    }
+.project__image {
+  margin-left: -50%;
+}

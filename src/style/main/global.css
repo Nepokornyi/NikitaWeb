@@ -14,6 +14,9 @@
     scroll-behavior: smooth;
     transition-duration:150ms;
 }
+body{
+    background-color: var(--mainColor);
+}
 
 section{
     width: 100%;
@@ -93,6 +96,17 @@ ul.dashed > li::before{
         width: 100px;
         height: 100px;
     }
+
+    /* Reveal Effect */
+
+.reveal{
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.active{
+    opacity: 1;
+}
 
 /* ----- */
     /* Portfolio */

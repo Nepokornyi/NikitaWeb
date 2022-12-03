@@ -31,7 +31,7 @@
                 <ul class="menu-list no-style-list">
                     <li><a href="#about">About</a></li>
                     <li><a href="#partners">Partners</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services-link">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -40,6 +40,7 @@
         <div class="container-intro">
             <h1><center>Meet your <br>Content Creator</center></h1>
             <div class="intro-img"></div>
+
         </div>
     </section>
 
@@ -66,7 +67,7 @@
             </article>
         </section>
 
-        <section class="carousel partners" id="partners">
+        <section class="carousel partners reveal" id="partners">
             <div>
                 <h1>Partners</h1>
             </div>
@@ -87,84 +88,89 @@
             </div>
         </section>
 
-        <section class="services" id="services">
-            <h1>Services</h1>
-            <div class="service-container">
-                <div class="service-wrapper">
-                    <div class="service-description">
-                        <h2>Content Creation</h2>
-                        <ul>
-                            <li>Photo and Video Content</li>
-                            <ul class="sublist">
-                                <li>Concepts, Ideas and Script​</li>
-                                <li>Indoor or Outdoor Production</li>
-                                <li>No postpone deadlines</li>
-                            </ul>
-                            <li>Post-Production capabilities</li>
-                            <ul class="sublist">
-                                <li>Photo and Video Editing</li>
-                                <li>Motion Design, 2D-animation</li>
-                            </ul>
-                            <li>Visual Effects from the scratch</li>
-                        </ul>
-                        <button onclick="location.href='#contact'">Offer</button>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="https://picsum.photos/475/251" alt="">
-                        <div class="dots">
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span> 
-                        </div>
+        <section class="services reveal" id="services-link">
+            <h1 class="service-header">Services</h1>
+            <div id="services">
+                <div class="project">
+                    <img class="project__image" src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=700&q=80" />
+                    <p>websites</p>
+                    <h3 class="grid__title"> front-end</h3>
+                    <div class="grid__overlay">
+                    <button class="viewbutton">view more</button>
                     </div>
                 </div>
-    
-                <div class="service-wrapper">
-                    <div class="service-description">
-                        <h2>Atelier</h2>
-                        <ul>
-                            <li>Atelier for rent</li>
-                            <ul class="sublist">
-                                <li>Lights, Grip, Backgrounds</li>
-                            </ul>
-                            <li>E-Commerce and Food Content</li>
-                            <li>Fashion and Clothes Brand</li>
-                            <li>Talking Head and Interviews</li>
-                            <li>Green Screen Capabilities</li>
-                            <li>Art Works</li>
-                        </ul>
-                        <button onclick="location.href='#contact'">Offer</button>
-                    </div>
-                    <div class="img-wrapper">
-
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <img src="https://picsum.photos/475/251" alt="">
-                            </div>
-                            
-                            <div class="mySlides fade">
-                                <img src="https://picsum.photos/475/252" alt="">
-                            </div>
-
-                            <div class="mySlides fade">
-                                <img src="https://picsum.photos/475/253" alt="">
-                            </div>
-            
-                            <a class="prev" onclick="plusSlides(-1)">❮</a>
-                            <a class="next" onclick="plusSlides(1)">❯</a>
-                        </div>
-
-                        <div class="dots">
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span> 
-                        </div>
+                
+                <div class="project">
+                    <img class="project__image" src="https://images.unsplash.com/photo-1521104955835-ba91c70d6443?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38cdeda7d073c4b6d47a5776f184cba9&auto=format&fit=crop&w=700&q=80" />
+                    <p>pure css</p>
+                    <h3 class="grid__title"> front-end</h3>
+                    <div class="grid__overlay">
+                    <button class="viewbutton">view more</button>
                     </div>
                 </div>
-            </div>               
+                
+                <div class="project">
+                    <img class="project__image" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=700&q=80" />
+                    <p>web apps</p>
+                    <h3 class="grid__title"> full-stack</h3>
+                    <div class="grid__overlay">
+                    <button class="viewbutton">view more</button>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img class="project__image" src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd4d735954f33290fbf984e4eb7abe32&auto=format&fit=crop&w=700&q=80" />
+                    <p>daily ui</p>
+                    <h3 class="grid__title"> ui/ux design</h3>
+                    <div class="grid__overlay">
+                    <button class="viewbutton">view more</button>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="project__image" src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c5008952226f48ed4bf5d3ea64ff545&auto=format&fit=crop&w=700&q=80" />
+                    <p>websites</p>
+                    <h3 class="grid__title"> front-end</h3>
+                    <div class="grid__overlay">
+                    <button class="viewbutton">view more</button>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img class="project__image" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-0.3.5&s=a4b3dc4bee43da458f6aa5c05be6bfc4&auto=format&fit=crop&w=700&q=80" />
+                    <p>pure css</p>
+                    <h3 class="grid__title"> front-end</h3>
+                    <div class="grid__overlay">
+                    <button class="viewbutton">view more</button>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img class="project__image" src="https://images.unsplash.com/photo-1481762554390-ff5562748bdf?ixlib=rb-0.3.5&s=1b7f850b7f8f702e237b0f81c0ec0bf5&auto=format&fit=crop&w=700&q=80" />
+                    <p>web apps</p>
+                    <h3 class="grid__title"> full-stack</h3>
+                    <div class="grid__overlay">
+                    <button class="viewbutton">view more</button>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img class="project__image" src="https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?ixlib=rb-0.3.5&s=e5bf2f64858b8abe2a386b0c6df594e4&auto=format&fit=crop&w=700&q=80" />
+                    <p>daily ui</p>
+                    <h3 class="grid__title"> ui/ux design</h3>
+                    <div class="grid__overlay">
+                    <button class="viewbutton">view more</button>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <div class="overlay__inner">
+                    <button class="close">close X</button>
+                    <img>
+                    </div>
+                </div>  
+              </div>          
         </section>
 
-        <section class="carousel portfolio" id="portfolio">
+        <section class="carousel portfolio reveal" id="portfolio">
             <div class="test">
                 <h1>Portfolio</h1>
             </div>
@@ -182,7 +188,7 @@
             </div>
         </section>
 
-        <section class="form" id="form">
+        <section class="form reveal" id="form">
             <h1>Want me to be your Content Creator?</h1>
             <div class="form-container">
                 <label for="email">Enter your email here</label>
@@ -196,7 +202,7 @@
         </section>
 
     </main>
-    <footer id="contact">
+    <footer id="contact" class="reveal">
         <center>
             <ul class="no-style-list">
                 <li>e-mail: nikita.rubin@rubyshark.eu</li>

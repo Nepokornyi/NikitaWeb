@@ -1,28 +1,45 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const buttons = document.querySelectorAll('.project');
+const overlay = document.querySelector('.overlay');
+const overlayImage = document.querySelector('.overlay__inner img');
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function open(e) {
+  overlay.classList.add('open');
+  const src= e.currentTarget.querySelector('img').src;
+  overlayImage.src = src;
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function close() {
+  overlay.classList.remove('open');
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+buttons.forEach(button => button.addEventListener('click', open));
+overlay.addEventListener('click', close);
+
+
+
+
+
+// ------------
+// reveal animation
+
+
+    function reveal (){
+      const reveals = document.querySelectorAll('.reveal');
+      
+      for (let i = 0; i < reveals.length; i++) {
+  
+          let windowHeight = window.innerHeight;
+          let revealTop    = reveals[i].getBoundingClientRect().top;
+          let revealPoint  = 0;
+          
+          if (revealTop < windowHeight - revealPoint) {
+              reveals[i].classList.add('active');
+          }
+          else{
+              reveals[i].classList.remove('active');
+          }
+      }
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-
+  
+  window.addEventListener('scroll', reveal);
+  // ------------
