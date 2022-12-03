@@ -39,7 +39,7 @@
         </div>
         <div class="container-intro">
             <h1><center>Meet your <br>Content Creator</center></h1>
-            <img src="./src/assets/img/1-small.jpg" alt="">
+            <div class="intro-img"></div>
         </div>
     </section>
 
@@ -70,7 +70,7 @@
             <div>
                 <h1>Partners</h1>
             </div>
-            <span class="strip"></span>
+            <span class="strip-left"></span>
             <div class="carousel-container">
                 <div>
                     <figure><a href=""><img src="./src/assets/img/bolt_100x100.png" alt=""></a></figure>
@@ -168,7 +168,7 @@
             <div class="test">
                 <h1>Portfolio</h1>
             </div>
-            <span class="strip"></span>
+            <span class="strip-right"></span>
             <div class="carousel-container">
                 <div>
                     <figure><a href=""><img src="./src/assets/img/latch.webp" alt=""></a></figure>
@@ -186,9 +186,11 @@
             <h1>Want me to be your Content Creator?</h1>
             <div class="form-container">
                 <label for="email">Enter your email here</label>
-                <form>
-                    <input type="email" name="email" id="email" placeholder=" E-mail">
-                    <input type="submit" id="submit" value="Sign up">
+                <form action="https://formsubmit.co/nikita.rubin@rubyshark.eu" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="email" name="email" id="email" placeholder=" E-mail" required>
+                    <input type="hidden" id="_next" value="https://nepokornyi.github.io/NikitaWeb/response.html">
+                    <button type="submit" id="submit">Get in touch</button>
                 </form>
             </div>
         </section>
@@ -197,8 +199,12 @@
     <footer id="contact">
         <center>
             <ul class="no-style-list">
-                <li>Working e-mail: nikita.rubin@rubyshark.eu</li>
-                <li>Social Networks: три маленькие икочки - тг, инст, линкед</li>
+                <li>e-mail: nikita.rubin@rubyshark.eu</li>
+                <li>phone: +420 773 042 876</li>
+                <ul class="no-style-list icons">
+                    <li><a href=""><img src="./src/assets/img/instagram.png" style="filter: invert(100%)" alt=""></a></li>
+                    <li><a href=""><img src="./src/assets/img/linkedin.png" style="filter: invert(100%)" alt=""></a></li>
+                </ul>
             </ul>
         </center>
     </footer>

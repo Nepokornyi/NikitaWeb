@@ -26,6 +26,7 @@ section{
 }
 h1,h2,h3,h4,h5,h6,.container-intro center{
     font-family: 'Helvetica', 'Arial', sans-serif;
+    text-shadow: 0.5px 0.5px 15px var(--mainColor);
 }
 
 h1{
@@ -39,13 +40,15 @@ a{
 }
 
 
-.strip{
+.strip-right, .strip-left{
     background-color: var(--font);
     height: 85px;
     width: 6px;
 
     margin: 30px;
 }
+.strip-left { margin-left: 65px;}
+.strip-right { margin-right: 65px;}
 
 
 .no-style-list{
@@ -94,6 +97,8 @@ ul.dashed > li::before{
     background-image: url('../../assets/img/3-small.jpg');
     background-size:cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .test {
@@ -116,4 +121,6 @@ ul.dashed > li::before{
     background-image: url('../../assets/img/2-small.jpg');
     background-size:cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }

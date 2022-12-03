@@ -3,8 +3,18 @@
 /* ----- */
 
 footer{
+    height: 15vh;
     background-color: var(--mainColor);
     color: var(--font);
     display: flex;
     justify-content: center;
+}
+.icons{
+    display:flex; 
+    justify-content: center; 
+    gap:15px; 
+    margin: 10px;
+}
+.icons>li:hover{
+    transform: scale(1.15);
 }
