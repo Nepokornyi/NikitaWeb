@@ -77,6 +77,9 @@ ul.dashed > li::before{
 .carousel-container{
     display: flex;
 }
+    .carousel-logos img{
+        background-color: white;
+    }
 
     figure{
         margin-left: 35px;
@@ -87,7 +90,8 @@ ul.dashed > li::before{
         transform:scale(1.1);
     }
     figure img{
-        object-fit: scale-down;
+        width: 100px;
+        height: 100px;
     }
 
 /* ----- */
