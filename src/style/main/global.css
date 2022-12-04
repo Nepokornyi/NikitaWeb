@@ -88,6 +88,11 @@ ul.dashed > li::before{
         margin-left: 35px;
         width: 100px;
         height: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
     }
     figure:hover{
         transform:scale(1.1);
@@ -95,6 +100,12 @@ ul.dashed > li::before{
     figure img{
         width: 100px;
         height: 100px;
+        object-fit: contain;
+    }
+    .logos img{
+        width: 70px;
+        height: 65px;
+        object-fit: contain;
     }
 
     /* Reveal Effect */

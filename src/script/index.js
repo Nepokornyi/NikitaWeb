@@ -1,10 +1,11 @@
-const buttons = document.querySelectorAll('.project');
+const content = document.querySelectorAll('.project')
+const buttons = document.querySelectorAll('.viewbutton');
 const overlay = document.querySelector('.overlay');
 const overlayImage = document.querySelector('.overlay__inner img');
 
 function open(e) {
   overlay.classList.add('open');
-  const src= e.currentTarget.querySelector('img').src;
+  const src = e.currentTarget.querySelector('img').src;
   overlayImage.src = src;
 }
 
@@ -12,7 +13,7 @@ function close() {
   overlay.classList.remove('open');
 }
 
-buttons.forEach(button => button.addEventListener('click', open));
+content.forEach(button => button.addEventListener('click', open));
 overlay.addEventListener('click', close);
 
 
@@ -21,8 +22,6 @@ overlay.addEventListener('click', close);
 
 // ------------
 // reveal animation
-
-
     function reveal (){
       const reveals = document.querySelectorAll('.reveal');
       

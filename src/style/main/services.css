@@ -73,6 +73,7 @@ z-index: 1;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   position: relative;
+  cursor: pointer;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -88,6 +89,7 @@ z-index: 1;
     border: 1px solid white;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
     padding: 10px;
 }
     .grid__overlay > button:hover {
@@ -107,6 +109,7 @@ z-index: 1;
   display: none;
   z-index: 3;
 }
+
 .overlay.open {
   display: grid;
   align-items: center;
@@ -126,7 +129,6 @@ z-index: 1;
   top: 3px;
   right: 10px;
   background: none;
-  outline: 0;
   color: black;
   border: 0;
   text-transform: uppercase;
