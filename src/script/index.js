@@ -1,23 +1,52 @@
-const content = document.querySelectorAll('.project')
-const buttons = document.querySelectorAll('.viewbutton');
+const contentImg = document.querySelectorAll('.project')
+const contentVideo = document.querySelectorAll('.project-video')
+const buttonsImg = document.querySelectorAll('.viewbutton');
+const buttonsVideo = document.querySelectorAll('.videobutton');
 const overlay = document.querySelector('.overlay');
+const overlayInner = document.querySelector('.overlay__inner')
+const closeOverlay = document.querySelector('.close')
 const overlayImage = document.querySelector('.overlay__inner img');
+const overlayVideo = document.querySelector('.overlay__inner iframe');
+const body = document.getElementsByTagName("BODY")[0];
 
-function open(e) {
+function openImg(e) {
   overlay.classList.add('open');
-  const src = e.currentTarget.querySelector('img').src;
-  overlayImage.src = src;
+  const srcImg = e.currentTarget.querySelector('img').src;
+  overlayImage.style.display = 'initial';
+  overlayImage.src = srcImg;
+  body.style.overflowY = 'hidden';
+}
+
+function openVideo(e) {
+  overlay.classList.add('open');
+  const srcVideo = e.currentTarget.querySelector('source').src;
+  overlayVideo.style.display = 'initial';
+  overlayVideo.src = srcVideo;
+  body.style.overflowY = 'hidden';
 }
 
 function close() {
   overlay.classList.remove('open');
+  overlayImage.src = '';
+  overlayVideo.src = '';
+  overlayVideo.style.display = 'none';
+  overlayImage.style.display = 'none';
+  body.style.overflowY = 'scroll';
 }
 
-content.forEach(button => button.addEventListener('click', open));
-overlay.addEventListener('click', close);
+contentImg.forEach(button => button.addEventListener('click', openImg));
+contentVideo.forEach(button => button.addEventListener('click', openVideo));
+closeOverlay.addEventListener('click', close);
+overlay.addEventListener('click', close)
 
 
-
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+} else {
+  window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+  }
+}
 
 
 // ------------
@@ -40,5 +69,50 @@ overlay.addEventListener('click', close);
       }
   }
   
-  window.addEventListener('scroll', reveal);
-  // ------------
+window.addEventListener('scroll', reveal);
+// ------------
+
+
+// const header = document.querySelector('h2')
+// const caption = document.querySelector('h1')
+// const menuAppear = document.querySelectorAll('.menu-point');
+// const introPageAppear = document.querySelector('#about')
+
+
+// setTimeout(() =>{
+//   header.classList.add('appear');
+//   setTimeout(() =>{
+//       setTimeout(() =>{
+//         menuAppear[0].style.opacity = 1;
+//       },100);
+//       setTimeout(() =>{
+//         menuAppear[1].style.opacity = 1;
+//       },200);
+//       setTimeout(() =>{
+//         menuAppear[2].style.opacity = 1;
+//       },300);
+//       setTimeout(() =>{
+//         menuAppear[3].style.opacity = 1;
+//       },400);
+//       setTimeout(() =>{
+//         menuAppear[4].style.opacity = 1;
+//       },500);
+//       setTimeout(() =>{
+//           caption.classList.add('appear');
+//       }, 600);
+//       setTimeout(() =>{
+//           introPageAppear.classList.add('appear');
+//       },700);
+//   }, 200);
+// },200);
+
+
+
+// const removeBlur = document.querySelectorAll('.blur');
+
+// setTimeout(() =>{
+//     for(let i = 0; i < removeBlur.length; i++){
+//         removeBlur[i].classList.remove('blur');
+//     }
+// },200);
+

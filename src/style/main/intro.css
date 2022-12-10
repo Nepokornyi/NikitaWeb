@@ -61,10 +61,12 @@
     justify-content: center;
 }
     .container-intro > h1{
+        min-width: 270px;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
         text-shadow: 0.5px 0.5px 15px var(--mainColor);
+
     }
     .intro-img{
         width: 100%;

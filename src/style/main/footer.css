@@ -14,7 +14,9 @@ footer{
     justify-content: center; 
     gap:15px; 
     margin: 10px;
+    transition-duration:150ms;
 }
 .icons>li:hover{
     transform: scale(1.15);
+    transition-duration:150ms;
 }
