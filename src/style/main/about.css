@@ -25,4 +25,5 @@
     .inner-list{
         list-style:disc;
         list-style-position: inside;
+        margin-left: 15px;
     }

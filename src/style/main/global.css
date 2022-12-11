@@ -3,6 +3,7 @@
     --mainColor:#1A1A19;
     --secondaryColor: #424242;
     --button: #4D4D4D;
+    --hover: #808080;
     color:var(--font);
 }
 
