@@ -12,10 +12,12 @@
 .about > article {
     width: 55vw;
     height: 50vh;
+    min-height: 350px;
     display: flex;
 }
     .about ul{
-        max-width: 40vw;
+        width: 40vw;
+        min-width: 350px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

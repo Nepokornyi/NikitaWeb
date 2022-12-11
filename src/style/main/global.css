@@ -13,8 +13,9 @@
     border: 0;
     font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
-    transition-duration:200ms;
-    transition-timing-function: ease-in-out;
+}
+body{
+    background-color: var(--mainColor);
 }
 
 section{
@@ -28,6 +29,7 @@ section{
 }
 h1,h2,h3,h4,h5,h6,.container-intro center{
     font-family: 'Helvetica', 'Arial', sans-serif;
+    text-shadow: 0.5px 0.5px 15px var(--mainColor);
 }
 
 h1{
@@ -38,91 +40,4 @@ h1{
 a{
     text-decoration: none;
     color:white;
-}
-
-
-.strip-right, .strip-left{
-    background-color: var(--font);
-    height: 85px;
-    width: 6px;
-
-    margin: 30px;
-}
-.strip-left { margin-left: 65px;}
-.strip-right { margin-right: 65px;}
-
-
-.no-style-list{
-    list-style-type: none;
-}
-ul.dashed {
-    list-style-type: none;
-  }
-ul.dashed > li{
-    text-indent: 5px;
-}
-ul.dashed > li::before{
-    content:"- ";
-    text-indent: 5px;
-}
-
-/* ----- */
-    /* Carousel */
-/* ----- */
-
-.carousel{
-    width: 100%;
-    height: 300px;
-}
-
-.carousel-container{
-    display: flex;
-}
-
-    figure{
-        margin-left: 35px;
-        width: 100px;
-        height: 100px;
-    }
-    figure:hover{
-        transform:scale(1.1);
-    }
-    figure img{
-        width: 100px;
-        height: 100px;
-    }
-
-/* ----- */
-    /* Portfolio */
-/* ----- */
-.portfolio{
-    background-image: url('../../assets/img/3-small.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.test {
-    order:3;
-}
-.portfolio span{
-    order:2;
-}
-.carousel-container{
-    order:1;
-    margin-right: 35px;
-}
-
-
-/* ----- */
-    /* Partners */
-/* ----- */
-
-.partners{    
-    background-image: url('../../assets/img/2-small.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
 }

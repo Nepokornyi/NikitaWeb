@@ -59,6 +59,7 @@
     justify-content: center;
 }
     .container-intro > h1{
+        min-width: 270px;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
